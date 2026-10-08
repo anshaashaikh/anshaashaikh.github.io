@@ -1,0 +1,205 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Anshaa Shaikh Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Caveat:wght@600;700&family=Nunito:wght@400;600;800&display=swap">
+<style>
+/* Layout: one centered column of tilted sticker-cards under a playful hero with floating petri-dish bubbles. */
+:root{
+  --bg:#E4F5EC; --card:#FFFFFF; --ink:#1B1F3B; --muted:#4A5173; --shadow:#1B1F3B;
+  --tomato:#FF5E4D; --butter:#FFD84D; --sky:#8FD0FF; --pink:#FFB3C7; --mint:#9BE3C0; --on-tab:#1B1F3B;
+  --display:'Caprasimo','Georgia',serif;
+  --hand:'Caveat','Comic Sans MS',cursive;
+  --body:'Nunito',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141733; --card:#1F2350; --ink:#F3F1FF; --muted:#B5B9E0; --shadow:#080A1C;
+  --tomato:#FF8070; --butter:#FFD84D; --sky:#7CC4FA; --pink:#F59CB6; --mint:#7ADBAF; --on-tab:#1B1F3B; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141733; --card:#1F2350; --ink:#F3F1FF; --muted:#B5B9E0; --shadow:#080A1C;
+  --tomato:#FF8070; --butter:#FFD84D; --sky:#7CC4FA; --pink:#F59CB6; --mint:#7ADBAF; --on-tab:#1B1F3B; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;padding-inline:20px;padding-block:28px 48px;overflow-x:hidden}
+a{color:var(--ink);text-decoration-color:var(--tomato);text-decoration-thickness:3px;text-underline-offset:4px}
+a:focus-visible{outline:3px solid var(--tomato);outline-offset:3px;border-radius:4px}
+.page{max-width:860px;margin-inline:auto;display:flex;flex-direction:column;gap:44px;min-width:0}
+
+/* hero */
+.hero{position:relative;padding-block:28px 8px}
+.bubble{position:absolute;border-radius:50%;border:3px solid var(--ink);pointer-events:none}
+.b1{width:86px;height:86px;background:var(--butter);right:6%;top:0}
+.b2{width:44px;height:44px;background:var(--pink);right:22%;top:96px}
+.b3{width:28px;height:28px;background:var(--sky);right:3%;top:130px}
+.b4{width:60px;height:60px;background:var(--mint);right:30%;top:6px}
+.hello{display:inline-block;font-family:var(--hand);font-weight:700;font-size:26px;background:var(--tomato);color:#fff;padding:2px 16px 4px;border:3px solid var(--ink);border-radius:999px;transform:rotate(-4deg);box-shadow:4px 4px 0 var(--shadow)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(46px,9vw,84px);line-height:.98;margin:18px 0 0;letter-spacing:-.01em;text-wrap:balance}
+.wobble{display:block;width:min(420px,80%);height:20px;margin-top:4px}
+.wobble path{fill:none;stroke:var(--tomato);stroke-width:6;stroke-linecap:round}
+.lede{max-width:34em;margin:18px 0 20px;font-size:19px;color:var(--muted);font-weight:600}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pills a,.pills span{font-weight:800;font-size:15px;text-decoration:none;background:var(--card);border:3px solid var(--ink);border-radius:999px;padding:4px 16px;box-shadow:3px 3px 0 var(--shadow);color:var(--ink)}
+.pills a:hover{background:var(--butter);color:#1B1F3B}
+.mail{user-select:all}
+
+/* cards */
+.card{position:relative;background:var(--card);border:3px solid var(--ink);border-radius:22px;box-shadow:8px 8px 0 var(--shadow);padding:28px 28px 26px;min-width:0}
+.c1{transform:rotate(-.6deg)} .c2{transform:rotate(.5deg)} .c3{transform:rotate(-.4deg)} .c4{transform:rotate(.4deg)} .c5{transform:rotate(-.3deg)}
+.tab{position:absolute;top:-20px;left:24px;font-family:var(--hand);font-weight:700;font-size:24px;color:var(--on-tab);border:3px solid var(--ink);border-radius:999px;padding:0 16px 2px;transform:rotate(-3deg)}
+.t1{background:var(--sky)} .t2{background:var(--pink)} .t3{background:var(--butter)} .t4{background:var(--mint)} .t5{background:var(--tomato);color:#fff}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(26px,5vw,36px);line-height:1.08;margin:12px 0 4px;text-wrap:balance}
+.stack{font-family:var(--hand);font-weight:700;font-size:22px;color:var(--muted);margin:0 0 18px;line-height:1.2}
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-bottom:24px}
+.cols h3{display:inline-block;font-family:var(--hand);font-size:24px;font-weight:700;margin:0 0 2px;background:linear-gradient(transparent 58%,var(--butter) 58%);padding-inline:2px}
+.cols p{margin:0;font-size:16px;color:var(--muted);font-weight:600}
+
+/* proof strips */
+.proof{border:3px dashed var(--ink);border-radius:16px;padding:18px;display:grid;gap:14px;margin-bottom:18px}
+.shout{font-family:var(--display);font-size:clamp(44px,9vw,64px);line-height:1;font-variant-numeric:tabular-nums;color:var(--tomato)}
+.shout small{font-family:var(--hand);font-size:24px;color:var(--muted);margin-left:10px;font-weight:700}
+.row{display:grid;grid-template-columns:100px minmax(0,1fr) 70px;align-items:center;gap:12px;font-weight:800;font-size:15px;font-variant-numeric:tabular-nums}
+.track{height:26px;border-radius:999px;border:3px solid var(--ink);overflow:hidden;background:transparent}
+.bar{height:100%}
+.scale{height:26px;border-radius:999px;border:3px solid var(--ink);background:linear-gradient(90deg,var(--mint),var(--butter) 55%,var(--tomato))}
+.scale-l{display:flex;justify-content:space-between;gap:12px;font-weight:800;font-size:15px;font-variant-numeric:tabular-nums;margin-top:6px}
+.stats{display:flex;flex-wrap:wrap;gap:16px 22px}
+.sticker{border:3px solid var(--ink);border-radius:18px;padding:8px 18px 10px;box-shadow:4px 4px 0 var(--shadow);min-width:130px}
+.sticker:nth-child(1){background:var(--sky);transform:rotate(-2deg)}
+.sticker:nth-child(2){background:var(--pink);transform:rotate(1.5deg)}
+.sticker:nth-child(3){background:var(--butter);transform:rotate(-1deg)}
+.sticker b{display:block;font-family:var(--display);font-weight:400;font-size:36px;line-height:1.05;font-variant-numeric:tabular-nums;color:#1B1F3B}
+.sticker span{font-family:var(--hand);font-weight:700;font-size:21px;color:#1B1F3B}
+.cta{display:inline-block;font-weight:800;font-size:16px;background:var(--tomato);color:#fff;border:3px solid var(--ink);padding:6px 20px;border-radius:999px;text-decoration:none;box-shadow:4px 4px 0 var(--shadow)}
+.cta:hover{background:var(--butter);color:#1B1F3B}
+
+/* how */
+.how{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:6px}
+.note{border:3px solid var(--ink);border-radius:16px;padding:14px 18px 16px;box-shadow:4px 4px 0 var(--shadow);color:#1B1F3B}
+.note:nth-child(1){background:var(--mint);transform:rotate(-1.2deg)}
+.note:nth-child(2){background:var(--butter);transform:rotate(1deg)}
+.note:nth-child(3){background:var(--sky);transform:rotate(.8deg)}
+.note:nth-child(4){background:var(--pink);transform:rotate(-.8deg)}
+.note h3{font-family:var(--hand);font-size:27px;font-weight:700;margin:0;line-height:1.1}
+.note p{margin:4px 0 0;font-size:16px;font-weight:600}
+footer{font-family:var(--hand);font-weight:700;font-size:22px;color:var(--muted);text-align:center}
+
+@media (max-width:760px){
+  .cols,.how{grid-template-columns:minmax(0,1fr)}
+  .card{padding:26px 18px 22px;box-shadow:6px 6px 0 var(--shadow)}
+  .row{grid-template-columns:78px minmax(0,1fr) 62px;gap:8px}
+  .b4{display:none}
+}
+@media (prefers-reduced-motion:no-preference){
+  .bubble{animation:bob 6s ease-in-out infinite}
+  .b2{animation-delay:-2s}.b3{animation-delay:-4s}.b4{animation-delay:-1s}
+  .sticker,.note,.hello{transition:transform .2s}
+  .sticker:hover,.note:hover{transform:rotate(0) scale(1.03)}
+  @keyframes bob{50%{transform:translateY(-12px)}}
+}
+</style>
+
+<div class="page">
+<header class="hero">
+  <span class="bubble b1" aria-hidden="true"></span>
+  <span class="bubble b2" aria-hidden="true"></span>
+  <span class="bubble b3" aria-hidden="true"></span>
+  <span class="bubble b4" aria-hidden="true"></span>
+  <span class="hello">hi, I'm</span>
+  <h1>Anshaa Shaikh</h1>
+  <svg class="wobble" viewBox="0 0 420 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 12 C 40 2, 70 20, 110 10 S 180 2, 220 12 S 290 20, 330 9 S 395 4, 416 11"/></svg>
+  <p class="lede">Biotech graduate turned data person (petri dishes out, dashboards in). I take messy numbers, build the system around them, and finish with something a person can act on.</p>
+  <div class="pills">
+    <a href="#credit">Credit risk</a>
+    <a href="#churn">Churn model</a>
+    <a href="#stroke">Stroke risk</a>
+    <a href="#research">Research</a>
+    <a href="#how">How I work</a>
+  </div>
+  <div class="pills" style="margin-top:14px">
+    <span class="mail">anshaa.shaikh@gmail.com</span>
+    <a href="https://github.com/anshaashaikh">github.com/anshaashaikh</a>
+  </div>
+</header>
+
+<section class="card c1" id="credit">
+  <span class="tab t1">case 01</span>
+  <h2>Credit Risk Analytics Pipeline</h2>
+  <p class="stack">PostgreSQL / SQL / Power BI / Python / July 2026</p>
+  <div class="cols">
+    <div><h3>the problem</h3><p>443K+ raw Lending Club loan records with 151 columns. Hard to query, and nobody could say whether the A to G risk grades held up.</p></div>
+    <div><h3>what I built</h3><p>A normalized PostgreSQL database (4 tables, enforced foreign keys), CTE and window-function analyses, a reusable stored function for borrower risk profiles, and a 3-page Power BI dashboard on live DirectQuery with custom DAX.</p></div>
+    <div><h3>how it went</h3><p>Risk grades rise in step with default rates, and a query that took 273ms now takes 145ms after targeted indexing.</p></div>
+  </div>
+  <div class="proof">
+    <div class="shout">47%<small>faster query, found with EXPLAIN ANALYZE</small></div>
+    <div class="row"><span>Before</span><div class="track"><div class="bar" style="width:100%;background:var(--pink)"></div></div><span>273 ms</span></div>
+    <div class="row"><span>After</span><div class="track"><div class="bar" style="width:53.1%;background:var(--mint)"></div></div><span>145 ms</span></div>
+    <div>
+      <div class="scale"></div>
+      <div class="scale-l"><span>Grade A: 6.9% default</span><span>Grade G: 50.8% default</span></div>
+    </div>
+  </div>
+  <a class="cta" href="https://github.com/anshaashaikh/credit-risk-analytics-pipeline">View on GitHub</a>
+</section>
+
+<section class="card c2" id="churn">
+  <span class="tab t2">case 02</span>
+  <h2>Waze User Churn Prediction</h2>
+  <p class="stack">Python / scikit-learn / XGBoost / June 2026</p>
+  <div class="cols">
+    <div><h3>the problem</h3><p>Which of 14,999 app users are likely to leave, and what do they have in common?</p></div>
+    <div><h3>what I built</h3><p>Behavioural features from raw usage data, then Logistic Regression, Random Forest and XGBoost compared side by side with tuning.</p></div>
+    <div><h3>how it went</h3><p>18.1% recall on the churn class, plus a feature-importance ranking of the main churn drivers.</p></div>
+  </div>
+  <div class="proof">
+    <div class="stats">
+      <div class="sticker"><b>14,999</b><span>user records</span></div>
+      <div class="sticker"><b>3</b><span>models compared</span></div>
+      <div class="sticker"><b>18.1%</b><span>churn recall</span></div>
+    </div>
+  </div>
+  <a class="cta" href="https://github.com/anshaashaikh/waze-churn-analysis">View on GitHub</a>
+</section>
+
+<section class="card c3" id="stroke">
+  <span class="tab t3">case 03</span>
+  <h2>Stroke Prediction Model</h2>
+  <p class="stack">R / October 2025</p>
+  <div class="cols">
+    <div><h3>the problem</h3><p>Only 4.8% of 5,110 patient records were stroke cases, so a naive model could look accurate and still miss them.</p></div>
+    <div><h3>what I built</h3><p>A Random Forest classifier with ROSE oversampling to handle the imbalance, validated on held-out test data.</p></div>
+    <div><h3>how it went</h3><p>Age, average glucose level and hypertension came out as the top risk factors.</p></div>
+  </div>
+  <div class="proof" style="margin-bottom:0">
+    <div class="stats">
+      <div class="sticker"><b>81.6%</b><span>sensitivity</span></div>
+      <div class="sticker"><b>0.89</b><span>ROC-AUC</span></div>
+      <div class="sticker"><b>4.8%</b><span>positive cases</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="card c4" id="research">
+  <span class="tab t4">research</span>
+  <h2>Dissertation at ICMR-National Institute of Nutrition</h2>
+  <p class="stack">R / spdep, sf / Hyderabad / Jan to May 2026</p>
+  <div class="cols" style="margin-bottom:0">
+    <div><h3>the problem</h3><p>Find long-term population trends across five national survey rounds (1992 to 2021) covering 700+ districts.</p></div>
+    <div><h3>what I built</h3><p>Multilevel mixed-effects models, plus Getis-Ord Gi* spatial analysis to map significant regional clusters after fixing multi-source geographic matching issues.</p></div>
+    <div><h3>how it went</h3><p>First-author manuscript submitted to an international journal. Selected to present at the 7th Asian Population Association Conference (APAC 2026), Hanoi.</p></div>
+  </div>
+</section>
+
+<section class="card c5" id="how">
+  <span class="tab t5">how I work</span>
+  <h2>Quick to learn, happy to own the unfamiliar</h2>
+  <div class="how">
+    <div class="note"><h3>Fast learner, adaptable</h3><p>I move between R, Python, SQL, Power BI and new tools as the problem needs, and get to something working early.</p></div>
+    <div class="note"><h3>Vibe coding</h3><p>I build with AI tools to turn an idea into a working prototype quickly.</p></div>
+    <div class="note"><h3>Runs things</h3><p>Conference Logistics Lead for ICABB 2024 (200+ attendees). NSS Coordinator leading 20+ volunteers across 5+ events.</p></div>
+    <div class="note"><h3>Team captain</h3><p>College football team captain.</p></div>
+  </div>
+</section>
+
+<footer>B.Tech Biotechnology, Dr. D. Y. Patil Biotechnology and Bioinformatics Institute, Pune. CGPA 10/10, 2026.</footer>
+</div>
+
+</body></html>
